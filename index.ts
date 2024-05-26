@@ -54,9 +54,9 @@ const programStart = async (person: Person) => {
 
     if (select === "Teacher") {
       console.log(chalk.green(`You are chatting with Teacher`));
+
       console.log(chalk.yellow("Hope you're doing well!"));
 
-      // Additional messages for Teacher
       console.log(chalk.green("Teacher: How can I assist you today?"));
       console.log(
         chalk.green("Teacher: Remember to submit your assignments on time.")
@@ -97,7 +97,6 @@ const programStart = async (person: Person) => {
         );
       }
 
-      // Additional messages for Student
       console.log(chalk.yellow(`${selectedStudent.name}: How was your day?`));
       console.log(
         chalk.yellow(`${selectedStudent.name}: I finished my homework.`)
